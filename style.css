@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "idroid";
+    src: url('fontes/idroid.otf') format('opentype'); /*inserir fonte de pasta local*/
+    font-weight: lighter;
+    font-style: normal;
+}
+:root {
+    --cor0: #6FBEFD;
+    --cor1: #66FAAE;
+    --cor2: #55E0DE;
+    --cor3: #63E060;
+    --cor4: #C6FD6A;
+    --cor5: #5BE359;
+}
+body{
+    background-color: var(--cor1)
+
+}
+header{ /*Configurações do cabeçalho*/
+    text-align: center;
+    background-image: linear-gradient( to bottom, #3ddc84, #2fa866 ) ;
+    padding: 10px;
+    margin: 0 auto;
+    border: 0px;
+    border-radius: 5px;
+    min-width: 400px;
+    max-width: 1000px;
+}
+header > h1{
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0 0.466);
+}
+header >h2{
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0 0.466);
+}
+nav{
+    text-align: left;
+    /*color: white;*/
+}
+nav > a{
+    text-decoration: none;
+    margin-right: 25px;
+    display: inline-block;
+    border: 3px #a4c639;
+    text-align: center;
+    height: 25px;
+    width: 100px;
+    transition-duration: .5s;
+
+}
+
+nav >a:hover{
+   
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #bfeb309f;
+    border-radius: 5px;
+ 
+   
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+main{
+    background-color: white;
+    text-align: justify;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px 1px;
+    border-radius: 2px;
+    align-items: center;
+    min-width: 400px;
+    max-width: 1000px;
+
+}
+article{
+    padding: 10px;
+    margin: 10px;
+
+}
+article#Historia > h2{
+
+    font-family: "idroid";
+    background-image: linear-gradient(to bottom, #c5ebd6, #83e1ad, #2fa866);
+    background-attachment: unset;
+}
+article#Historia >h3{
+    font-family: "idroid";
+    background-image: linear-gradient(to bottom, #c5ebd6, #83e1ad, #2fa866);
+    background-attachment: unset ;
+}
+article#versão >h2{
+    font-family: "idroid";
+    background-image: linear-gradient(to bottom, #c5ebd6, #83e1ad, #2fa866);
+    background-attachment: unset;
+}
+article#video{
+    margin: 0px auto;
+    display: block;
+    position: relative; /*Esse é a posição de referencia para demias config*/
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+
+}
+article#video > iframe{
+    position: absolute; /*Essa pega a posição inicial com referencia e adapta a paguina*/
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+img{
+    display: block;
+    margin: 0px auto;
+}
+article#aprender{
+    background-color: var(--cor0);
+    border-radius: 2%;
+}
+article#aprender > h2{
+    color: white;
+    background-color: var(--cor3);
+    width: auto;
+    padding: 10px;
+    margin: -9px;
+    border: 12px;
+    /* box-shadow: 1px 1px 1px 1px; */
+    border-radius: 10px 9px 4px 3px;
+
+
+}
+ul{
+    list-style-type: '\2714\0020\0020'; /*Insere simbolo; primeiro codigo é o emoji e os demais são o espaçamento em branco */
+    columns: 2; /*Insete colunas na lista*/
+    list-style-position: inside;
+
+}
+footer{
+    
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin: 0px;
+    border-radius: 2px;
+
+}
+footer >p{
+    text-align: center;
+    margin: 0px;
+}
